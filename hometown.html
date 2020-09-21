@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab20</title>
+    <link href="./index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Ryan McEvoy</h1>
+        <p1>Developer</p1>
+      </div>
+      
+      <div id="navbar">
+        <a href="index.html">About</a>
+        <a href="blogging.html">Blogging</a>
+        <a href="developing.html">Developing</a>
+        <a href="hometown.html">Hometown</a>
+        <a href="https://www.linkedin.com/in/ryan-mcevoy-5355118a/"target="_blank" class="right"><img src="Images/LinkedinThumbnail.png" alt="Linkedin" style="width:42px;height:42px;" class="right"></a>
+        <a href="Portfolio.html"class = "right">Portfolio</a> 
+      </div>
+      
+        <div class="main">
+          <h2>Hometown</h2>
+          <p>
+            <h1>Warren, Michigan</h1>
+           
+            <iframe src=
+                "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94142.24185150448!2d-83.09705331661787!3d42.49272067727644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824d083185a6a51%3A0xd55ef45fe74082c2!2sWarren%2C%20MI!5e0!3m2!1sen!2sus!4v1600649590369!5m2!1sen!2sus" 
+                width="400" 
+                height="300" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                tabindex="0">
+            </iframe>"
+          </p>
+        </div>
+
+        <div class="footer">
+            <h3>Phone: (586)229-5176</h3>
+            <h4>Email: rynmcevoy21@gmail.com</h4>
+          </div>
+
+          <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab20</title>
+    <link href="./index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Ryan McEvoy</h1>
+        <p1>Developer</p1>
+      </div>
+      
+      <div id="navbar">
+        <a href="index.html">About</a>
+        <a href="blogging.html">Blogging</a>
+        <a href="developing.html">Developing</a>
+        <a href="hometown.html">Hometown</a>
+        <a href="https://www.linkedin.com/in/ryan-mcevoy-5355118a/"target="_blank" class="right"><img src="Images/LinkedinThumbnail.png" alt="Linkedin" style="width:42px;height:42px;" class="right"></a>
+        <a href="Portfolio.html"class = "right">Portfolio</a> 
+      </div>
+      
+        <div class="main">
+          <h2>Developing</h2>
+          <p>
+            <h3>Grand Circus C#.NET</h3> 
+
+            <br>This programming bootcamp will introduce you to the fundamentals of 
+            <br>enterprise development (.NET), the use of Visual Studio, SQL databases,
+            <br> and how to design and deploy object- oriented applications. All along 
+            <br>the way and after bootcamp, get the tried and tested training and 
+            <br>support you need for a successful job search.
+ 
+          </p>
+        </div>
+
+        <div class="footer">
+            <h3>Phone: (586)229-5176</h3>
+            <h4>Email: rynmcevoy21@gmail.com</h4>
+          </div>
+
+          <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+</body>
+</html>
